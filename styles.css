@@ -1,0 +1,27 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+.font-serif-display {
+    font-family: 'Playfair Display', serif;
+}
+.hero-bg {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://placehold.co/22c55e/ffffff');
+    background-size: cover;
+    background-position: center;
+}
+.parallax-bg {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://placehold.co/166534/ffffff?text=Bahan-Bahan+Segar');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.6s ease-out;
+}
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
